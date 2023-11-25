@@ -1,0 +1,32 @@
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .recipe-card h3 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .recipe-card p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .recipe-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 15px;
+  }
+  
+  .no-recipes {
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,15 @@
+ossaùa
+<div *ngIf="recipes.length; else noRecipesTemplate">
+    <div class="recipe-card" *ngFor="let recipe of recipes">
+      <h3>{{ recipe.name }}</h3>
+      <p><strong>Prep Time:</strong> {{ recipe.prepTime }} minutes</p>
+      <p><strong>Ingredients:</strong> {{ recipe.ingredients }}</p>
+      <p><strong>Preparation Steps:</strong> {{ recipe.preparationSteps }}</p>
+      <img *ngIf="recipe.photo" [src]="recipe.photo" alt="{{ recipe.name }}" class="recipe-photo">
+    </div>
+  </div>
+  
+  <ng-template #noRecipesTemplate>
+    <p class="no-recipes">No recipes found.</p>
+  </ng-template>
+  
